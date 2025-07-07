@@ -7,10 +7,11 @@ import ResumeBuilder from "./components/ResumeBuilder";
 import SkillGapAnalyzer from "./components/SkillGapAnalyzer";
 import CareerChatbot from "./components/CareerChatbot";
 import TrainingPrograms from "./components/TrainingPrograms";
-import EmployerDashboard from "./components/EmployerDashboard";
-import MobileFirstDesign from "./components/MobileFirstDesign";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
+import EmployerLogin from "./components/EmployerLogin";
+import EmployerSignup from "./components/EmployerSignup";
+import EmployerDashboard from "./components/EmployerDashboard";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,8 +33,9 @@ function App() {
         <Route path="/skills" element={<SkillGapAnalyzer />} />
         <Route path="/chatbot" element={<CareerChatbot />} />
         <Route path="/training" element={<TrainingPrograms />} />
-        <Route path="/employer" element={<EmployerDashboard />} />
-        <Route path="/mobile" element={<MobileFirstDesign />} />
+        <Route path="/employer/login" element={<EmployerLogin />} />
+        <Route path="/employer/signup" element={<EmployerSignup />} />
+        <Route path="/employer/dashboard" element={<EmployerDashboard />} />
       </Routes>
       <Footer />
     </>

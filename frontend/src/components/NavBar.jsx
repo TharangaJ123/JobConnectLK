@@ -8,7 +8,7 @@ const navLinks = [
   { name: "Skill Gap Analyzer", path: "/skills" },
   { name: "Career Chatbot", path: "/chatbot" },
   { name: "Training Programs", path: "/training" },
-  { name: "Employer Dashboard", path: "/employer" },
+  { name: "Employer Dashboard", path: "/employer/dashboard" },
 ];
 
 export default function NavBar() {
